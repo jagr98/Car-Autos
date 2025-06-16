@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Autos - Taller Automotriz en Buga</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #202c3f;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services, .contact, .formulario {
+      background-color: white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #202c3f;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    .map-container {
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    /* Estilos para el botón de WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+    .whatsapp-float i {
+      margin-top: 15px;
+    }
+    /* Estilos para formulario */
+    .formulario input, .formulario textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .formulario button {
+      background-color: #202c3f;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+  <!-- Íconos de Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <h1>Car Autos</h1>
+  <p>Tu Taller Automotriz de Confianza en Buga, Valle del Cauca</p>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#formulario">Formulario</a>
+    <a href="#ubicacion">Ubicación</a>
+  </nav>
+</header>
+
+<section id="bienvenida">
+  <h2>Bienvenidos a Car Autos</h2>
+  <p>En Car Autos ofrecemos soluciones integrales para tu vehículo. Contamos con mecánicos expertos, equipos modernos y un servicio confiable para garantizar el mejor rendimiento de tu automóvil.</p>
+</section>
+
+<section id="servicios" class="services">
+  <h2>Servicios</h2>
+  <ul>
+    <li>Diagnóstico computarizado</li>
+    <li>Mantenimiento preventivo y correctivo</li>
+    <li>Reparación de motores y cajas</li>
+    <li>Electricidad automotriz</li>
+    <li>Servicio de alineación y balanceo</li>
+    <li>Pintura y latonería</li>
+  </ul>
+</section>
+
+<section id="contacto" class="contact">
+  <h2>Contáctanos</h2>
+  <p><strong>Dirección:</strong> Calle 4 # 6-43, Buga, Valle del Cauca</p>
+  <p><strong>Teléfono:</strong> <a href="tel:+573136519067">313 651 9067</a></p>
+  <p><strong>Horarios:</strong> Lunes a Viernes de 8:00 a.m. a 5:00 p.m.<br>
+    Sábados de 8:00 a.m. a 12:00 p.m.</p>
+</section>
+
+<section id="formulario" class="formulario">
+  <h2>Formulario de Contacto</h2>
+  <form action="https://formspree.io/f/tu-codigo-aqui" method="POST">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+    <label>Correo:</label>
+    <input type="email" name="email" required>
+    <label>Mensaje:</label>
+    <textarea name="mensaje" rows="5" required></textarea>
+    <button type="submit">Enviar Mensaje</button>
+  </form>
+</section>
+
+<section id="ubicacion" class="map-container">
+  <h2>¿Dónde estamos?</h2>
+  <p>Encuéntranos fácilmente en el centro de Buga:</p>
+  <iframe 
+    src="https://www.google.com/maps?q=Calle+4+%23+6-43,+Buga,+Valle+del+Cauca,+Colombia&output=embed" 
+    allowfullscreen 
+    loading="lazy">
+  </iframe>
+</section>
+
+<footer>
+  <p>&copy; 2025 Car Autos - Todos los derechos reservados.</p>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/573136519067" class="whatsapp-float" target="_blank" title="Escríbenos por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
